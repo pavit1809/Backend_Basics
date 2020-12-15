@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<h1>
+	You searched for : <%= texter.toUpperCase() %>
+</h1>
+<!-- whatever goes in the  percent <>is treated as javascript -->
+<% if (texter.toLowerCase() == "happy"){%>
+	<h3>
+		You are happy
+</h3>
+<%}else{%>
+<p>
+	you are sad
+</p>
+<%}%>
+<p>
+	It is coming from .ejs file
+</p>
+<%- include("partials/footer") %>
+<!-- for reference read readme.md -->
